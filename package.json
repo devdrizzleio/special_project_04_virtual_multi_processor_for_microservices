@@ -1,0 +1,44 @@
+{
+  "name": "vmpm",
+  "version": "1.0.0",
+  "description": "Virtual Multi-Processor for Microservices (VMPM) - Production Grade Backend",
+  "main": "server.js",
+  "type": "module",
+
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "lint": "echo \"Linting not configured yet\"",
+    "test": "echo \"No tests yet\""
+  },
+
+  "keywords": [
+    "virtual",
+    "processor",
+    "microservices",
+    "backend",
+    "nodejs",
+    "cluster",
+    "mongodb",
+    "docker",
+    "production-grade"
+  ],
+
+  "author": "DevDrizzleIO",
+  "license": "ISC",
+
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.3.4",
+    "dotenv": "^16.4.5",
+    "uuid": "^9.0.1",
+    "cors": "^2.8.5",
+    "morgan": "^1.10.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
+  },
+
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

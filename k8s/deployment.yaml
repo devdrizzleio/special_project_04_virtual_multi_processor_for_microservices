@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vmpm-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vmpm
+  template:
+    metadata:
+      labels:
+        app: vmpm
+    spec:
+      containers:
+        - name: vmpm
+          image: vmpm:latest
+          ports:
+            - containerPort: 7000
+          envFrom:
+            - configMapRef:
+                name: vmpm-config

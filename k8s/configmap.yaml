@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: vmpm-config
+data:
+  PORT: "7000"
+  MONGO_URI: "mongodb://mongo:27017/vmpm"
+  MAX_PROCESSORS: "4"
+  PROCESSOR_REFRESH_INTERVAL: "5000"
